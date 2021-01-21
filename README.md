@@ -30,3 +30,22 @@ Källkoden ska vara pushad till ett eget publikt repository på GitHub. Ert full
 - Hur mycket valde du att optimera koden, varför är det en rimlig nivå för vårt program?
 
 ska finnas med i README.md i repots main-branch (master).
+
+
+---------------------------------------------------------------------------------------------
+## Nils Lundell
+Tester:
+	Sortering- Enkel att testa men viktig för presentationen
+	FindMovieById- Även den lätt att testa men viktig för att api ska funka som specificerat
+	CombineMovie- För att undvika dubletter och se till att funktionen bara gör en sak
+
+Pattern:
+	Template: För att slippa kladdet med alla JsonSerializers och underlätta för användaren genom att hämta all data med "en" funktion.
+	blir svårare att göra fel på det sättet.
+	Jag kommer inte på några patterns som bidrar med just den här funktionen.
+
+Optimering:
+	Eftersom api:t var ganska litet och simpelt så såg jag till att hålla koden i controllern ganska enkel så att man lätt
+	kan förstå vad som händer.
+	Detta gör förhoppningsvis programmet lättare att underhålla.
+	Jag la även till en extra sortering på namn ifall flera titlar skulle ha samma rating.
